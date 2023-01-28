@@ -9,12 +9,9 @@ RENDER /etc/ssh/sshd_config
 
 
 CMD ssh-keygen -A
-SERVICE routing stop
-SERVICE netif restart
-SERVICE routing restart
+CMD ifconfig vnet0 inet6 accept_rtadv -tso6 -rxsum6
 
 PKG bootstrap
-
 SERVICE sshd restart
 
 PKG git vim mosh 
