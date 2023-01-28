@@ -9,7 +9,7 @@ RENDER /etc/ssh/sshd_config
 
 
 CMD ssh-keygen -A
-CMD ifconfig vnet0 inet6 accept_rtadv -tso6 -rxsum6
+CMD ifconfig vnet0 inet6 accept_rtadv
 
 PKG bootstrap
 SERVICE sshd restart
