@@ -13,6 +13,5 @@ SERVICE routing stop
 SERVICE netif restart
 SERVICE routing restart
 SERVICE sshd restart
-CMD passwd root 
 
 PKG git vim mosh 
