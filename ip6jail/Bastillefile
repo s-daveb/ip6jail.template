@@ -1,0 +1,14 @@
+
+ARG SSH_PORT
+
+CP root /
+CP etc /
+
+RENDER /etc/rc.conf.local
+RENDER /etc/ssh/sshd_config
+
+PKG git vim mosh 
+
+CMD ssh-keygen -A
+SERVICE sshd restart
+CMD passwd root 

@@ -1,0 +1,6 @@
+
+ifconfig_vnet0="inet ${IP4_ADDR} -tso -rxcsum"
+ifconfig_vnet0_ipv6="inet6 auto_linklocal accept_rtadv -tso6 -rxcsum6"
+
+sshd_enable="YES"
+firewall_enable="NO"
