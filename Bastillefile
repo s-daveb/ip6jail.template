@@ -14,6 +14,6 @@ SERVICE netif restart
 PKG bootstrap
 SERVICE sshd restart
 
-PKG git vim mosh 
+PKG git vim-tiny mosh 
 
 CMD ifconfig vnet0 | grep inet6
