@@ -12,6 +12,9 @@ CMD ssh-keygen -A
 SERVICE routing stop
 SERVICE netif restart
 SERVICE routing restart
+
+PKG bootstrap
+
 SERVICE sshd restart
 
 PKG git vim mosh 
