@@ -10,5 +10,8 @@ RENDER /etc/ssh/sshd_config
 PKG git vim mosh 
 
 CMD ssh-keygen -A
+SERVICE routing stop
+SERVICE netif restart
+SERVICE routing restart
 SERVICE sshd restart
 CMD passwd root 
