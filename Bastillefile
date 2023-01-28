@@ -15,3 +15,5 @@ SERVICE routing restart
 SERVICE sshd restart
 
 PKG git vim mosh 
+
+CMD ifconfig vnet0 | grep inet6
