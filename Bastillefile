@@ -9,7 +9,7 @@ RENDER /etc/ssh/sshd_config
 
 
 CMD ssh-keygen -A
-CMD ifconfig vnet0 inet6 accept_rtadv
+SERVICE netif restart
 
 PKG bootstrap
 SERVICE sshd restart
